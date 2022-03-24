@@ -13,9 +13,6 @@ On The other hand the customer has to pay regularly to an insurance company for 
 - The objective of the project is:
  Build a model to predict whether the policyholders (customers) from past year will also be interested in Vehicle Insurance provided by the company.
 
-
-How we can decrease the chances of getting this problem by some preventive measures !
-
 -   ## Solution process
 
 ### Discuss about The Data:
@@ -23,7 +20,7 @@ How we can decrease the chances of getting this problem by some preventive measu
 - I got the data set from kaggle competition:
 https://www.kaggle.com/c/vehicle-insurance-classification-tah/data?select=train_set.csv
 
-- The data set has (13) Columns & (305722) Rows:
+- The data set has (12) Columns & (305723) Rows:
 
  id: customer ID.
  Gender: Male or Female.
@@ -35,15 +32,18 @@ https://www.kaggle.com/c/vehicle-insurance-classification-tah/data?select=train_
  Vehicle_Age: '<1 Year', '1-2 Year', '>2 Year'.
  Vehicle_Damage: if The Vehicle damage(Yes) or Not (No).
  Annual_Premium: is a sum of money that the customer needs to pay regularly to an insurance company for this guarantee range from (2.63k) to (540k).
- Policy_Sales_Channel: from (1) to (163)
- Vintage: from (10) to (299)
+ Policy_Sales_Channel: is the sales agency id its range from (1) to (163).
+ Vintage: is the days of health insured till now for the customer its range from (10) to (299).
  Response: Whether the policyholders (customers) from past year will also be interested in Vehicle Insurance provided by the company (1) or not(0)
 
 ### Analyze The Data :
 
-what do you analyze like: (Heterogeneous population, Anomaly detection,
-Missing value treatment, create new variables upon mutual
-relation(feature engineering))
+- At first The Data does not have missing values, When I did Univariate analysis There was one Feature with an outliers which is 'Annual_Primum', I got rid of them using IQR (Interquartile Range), Then I found that The data has Imbalanced features which are 'Driving_License' and The Target 'Response', I resampled The Target using an OverSampling technique (SMOTE).
+
+![alt text](?raw=true)
+
+![alt text](https://github.com/Huzaifa-Nusairat/Vehicle_Insurance_Classification/blob/master/Images/Categorical_Analysis.png?raw=true)
+
 
 ### Analytical approach:
 
