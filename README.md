@@ -36,26 +36,25 @@ https://www.kaggle.com/c/vehicle-insurance-classification-tah/data?select=train_
  Vintage: is the days of health insured till now for the customer its range from (10) to (299).
  Response: Whether the policyholders (customers) from past year will also be interested in Vehicle Insurance provided by the company (1) or not(0)
 
+### Analytical approach:
+- The Work Flow of this project:
+![alt text](https://github.com/Huzaifa-Nusairat/Vehicle_Insurance_Classification/blob/master/Images/VIC_Flow_Chart.jpeg?raw=true)
+
 ### Analyze The Data :
 
 - At first The Data does not have missing values, When I did Univariate analysis There was one Feature with an outliers which is 'Annual_Primum', I got rid of them using IQR (Interquartile Range), Then I found that The data has Imbalanced features which are 'Driving_License' and The Target 'Response', I resampled The Target using an OverSampling technique (SMOTE).
 
-![alt text](?raw=true)
+##### Nominal Features:
+![alt text](https://github.com/Huzaifa-Nusairat/Vehicle_Insurance_Classification/blob/master/Images/Categorical_features.jpeg?raw=true)
 
-##### Nominal Data:
-![alt text](https://github.com/Huzaifa-Nusairat/Vehicle_Insurance_Classification/blob/master/Images/Categorical_Analysis.png?raw=true)
+##### Continuous Features:
+![alt text](https://github.com/Huzaifa-Nusairat/Vehicle_Insurance_Classification/blob/master/Images/Numerical_Features.jpeg?raw=true)
 
+##### Target Feature:
+![alt text](https://github.com/Huzaifa-Nusairat/Vehicle_Insurance_Classification/blob/master/Images/Target_feature.jpeg?raw=true)
 
-### Analytical approach:
-
-What kind of analytical approach did you use like:(supervised ML or
-unsupervised ML, etc...)
-
-Model preparation:
-
-how you prepare the model like: (we teach the model on the training data
-set)
-
+- ![alt text](?raw=true)
+- for Bivariate Analysis I Observed that
 ### Model validation:
 
 1- how you validate the model!
