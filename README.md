@@ -42,6 +42,7 @@ https://www.kaggle.com/c/vehicle-insurance-classification-tah/data?select=train_
 
 ![alt text](?raw=true)
 
+##### Nominal Data:
 ![alt text](https://github.com/Huzaifa-Nusairat/Vehicle_Insurance_Classification/blob/master/Images/Categorical_Analysis.png?raw=true)
 
 
